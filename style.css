@@ -55,7 +55,7 @@ body{
 }
 
 #toggleDarkMode {
-    background-color: #2b138d;
+    background-color: #2b138d !important;
     color: #fff;
     border: none;
     padding: 10px 20px;
@@ -63,4 +63,4 @@ body{
     cursor: pointer;
 }
 
-body.dark-mode { background: #222; color: white; } /* Modo escuro */
+body.dark-mode { background: #222 !important; color: white; } /* Modo escuro */
