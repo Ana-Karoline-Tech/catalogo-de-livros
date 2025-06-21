@@ -1,11 +1,13 @@
 let livros = [
   { titulo: "Bíblia Sagrada", autor: "Deus" },
-    { titulo: "O Senhor dos Anéis", autor: "J.R.R. Tolkien" },
+    { titulo: "Cristianismo Puro e Simples", autor: "C.S. Lewis" },
+    { titulo: "Uma Vida com Propósitos", autor: "Rick Warren" },
+    { titulo: "O Conhecimento de Deus", autor: "J.I. Packer" },
     { titulo: "1984", autor: "George Orwell" },
-    { titulo: "Dom Casmurro", autor: "Machado de Assis" },
+    { titulo: "O Custo do Discipulado", autor: "Dietrich Bonhoeffer" },
     { titulo: "A Revolução dos Bichos", autor: "George Orwell" },
     { titulo: "O Pequeno Príncipe", autor: "Antoine de Saint-Exupéry" },
-    { titulo: "Orgulho e Preconceito", autor: "Jane Austen" },
+    { titulo: "Em Busca de Deus", autor: "John Piper" },
     
 ];
 
