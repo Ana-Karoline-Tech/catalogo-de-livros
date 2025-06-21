@@ -1,18 +1,18 @@
-// 1. Selecionar elementos
-const toggleBtn = document.getElementById("toggleDarkMode");
-const body = document.body;
+    // 1. Selecionar elementos
+    const toggleBtn = document.getElementById("toggleDarkMode");
+    const body = document.body;
 
-// 2. Verificar preferência salva no localStorage
-const isDarkMode = localStorage.getItem("darkMode") === "true";
+    // 2. Verificar preferência salva no localStorage
+    const isDarkMode = localStorage.getItem("darkMode") === "true";
 
-// 3. Aplicar o tema salvo ao carregar a página
-if (isDarkMode) {
-    body.classList.add("dark-mode");
-    toggleBtn.textContent = "Light Mode";
-}
+    // 3. Aplicar o tema salvo ao carregar a página
+    if (isDarkMode) {
+        body.classList.add("dark-mode");
+        toggleBtn.textContent = "Light Mode";
+    }
 
-// 4. Alternar tema ao clicar no botão
-toggleBtn.addEventListener("click", () => {
+    // 4. Alternar tema ao clicar no botão
+    toggleBtn.addEventListener("click", () => {
     // Alterna a classe no body
     body.classList.toggle("dark-mode");
     
