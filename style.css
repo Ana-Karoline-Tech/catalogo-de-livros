@@ -53,3 +53,14 @@ body{
 #alternarCatalogo:hover {
   background-color: #003f6b;
 }
+
+#toggleDarkMode {
+    background-color: #2b138d;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+body.dark-mode { background: #222; color: white; } /* Modo escuro */

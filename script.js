@@ -1,3 +1,30 @@
+// 1. Selecionar elementos
+const toggleBtn = document.getElementById("toggleDarkMode");
+const body = document.body;
+
+// 2. Verificar preferência salva no localStorage
+const isDarkMode = localStorage.getItem("darkMode") === "true";
+
+// 3. Aplicar o tema salvo ao carregar a página
+if (isDarkMode) {
+    body.classList.add("dark-mode");
+    toggleBtn.textContent = "Light Mode";
+}
+
+// 4. Alternar tema ao clicar no botão
+toggleBtn.addEventListener("click", () => {
+    // Alterna a classe no body
+    body.classList.toggle("dark-mode");
+    
+    // Atualiza o texto do botão
+    const isNowDark = body.classList.contains("dark-mode");
+    toggleBtn.textContent = isNowDark ? "Light Mode" : "Dark Mode";
+    
+    // Salva a preferência no localStorage
+    localStorage.setItem("darkMode", isNowDark);
+});
+
+
 let livros = [
   { titulo: "Bíblia Sagrada", autor: "Deus" },
     { titulo: "Cristianismo Puro e Simples", autor: "C.S. Lewis" },
